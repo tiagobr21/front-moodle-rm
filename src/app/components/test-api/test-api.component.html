@@ -1,0 +1,24 @@
+
+
+
+<section  class="dados">
+ 
+     
+    <button id="cadastrar" (click)="cadastrarUsuarios()"  type="button" class="btn btn-dark">Cadastrar alunos</button>
+    <button id="consultar" routerLink ='/alunos/consultar-aluno' type="button" class="btn btn-info">Consultar alunos</button>
+    <button id="deletar" (click)="openDelete()" type="button" class="btn btn-danger">Deletar alunos</button>
+    <div *ngIf="!loading && cadastrar">
+    <h4 class="title-progress">Carregando Alunos</h4>
+        <mat-progress-bar *ngIf="!loading && cadastrar" class="progress" mode="buffer"></mat-progress-bar> 
+    </div>
+    
+    <div *ngIf="loading">
+        <div id="message-sucess" class="alert alert-success" role="alert">
+           Alunos Atualiazados com sucesso!
+        </div>
+    </div>
+
+   
+    
+   
+</section>

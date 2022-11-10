@@ -1,0 +1,36 @@
+
+
+
+<mat-icon routerLink ='/alunos' class="backpage">keyboard_backspace</mat-icon>
+
+<div class="loading" *ngIf="!loading">  
+    <h4 id="title-progress" class="fixed-top">Carregando Alunos</h4>
+    <mat-progress-bar class="progress" *ngIf="!loading" mode="buffer"></mat-progress-bar>
+
+</div> 
+ 
+<section *ngIf="loading"  class="dados">
+  
+    <div *ngFor="let dados of alunos_array" class="tabela">
+        <table class="table table-dark table-striped">
+            <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">NOME</th>
+                <th scope="col">SOBRENOME</th>
+                <th scope="col">EMAIL</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th>{{dados.id}}</th>
+                <td>{{dados.firstname}}</td>
+                <td>{{dados.lastname}}</td>
+                <td>{{dados.email}}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+
