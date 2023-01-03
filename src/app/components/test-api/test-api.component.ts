@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ServiceService } from 'src/app/service/service.service';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
-import { DeletarComponent } from '../deletar/deletar.component';
 import { ConsultarAlunosComponent } from '../consultar-alunos/consultar-alunos.component';
 
 
@@ -33,13 +32,7 @@ export class TestApiComponent implements OnInit {
     })
   }
 
-  openDelete(){
 
-    const dialogRef = this.dialog.open(DeletarComponent,{
-      width:'550px'
-    });
-  }
- 
 
 
 

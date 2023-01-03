@@ -1,20 +1,26 @@
 
-
+<img class="mdl-img" src="../../../assets/img/mdl.png">
+<img class="relationship" src="../../../assets/img/relationship.png">
+<img class="rm-img" src="../../../assets/img/rm.png">
 
 <section  class="dados">
- 
-     
-    <button id="cadastrar" (click)="cadastrarUsuarios()"  type="button" class="btn btn-dark">Cadastrar alunos</button>
-    <button id="consultar" routerLink ='/alunos/consultar-aluno' type="button" class="btn btn-info">Consultar alunos</button>
-    <button id="deletar" (click)="openDelete()" type="button" class="btn btn-danger">Deletar alunos</button>
+   
+    <div class="flex">
+        <mat-icon id="cadastrar" (click)="cadastrarUsuarios()">group_add</mat-icon>
+        <mat-icon id="consultar" routerLink ='/alunos/consultar-aluno'>supervisor_account</mat-icon>
+    </div>
+
+    <p class="descrition1">Cadastrar alunos</p>
+    <p class="descrition2">Consultar alunos</p>
+
     <div *ngIf="!loading && cadastrar">
     <h4 class="title-progress">Carregando Alunos</h4>
-        <mat-progress-bar *ngIf="!loading && cadastrar" class="progress" mode="buffer"></mat-progress-bar> 
+    <mat-progress-bar class="progress" *ngIf="!loading && cadastrar" mode="indeterminate"></mat-progress-bar>
     </div>
     
     <div *ngIf="loading">
         <div id="message-sucess" class="alert alert-success" role="alert">
-           Alunos Atualiazados com sucesso
+           Alunos Atualiazados com sucesso!
         </div>
     </div>
 

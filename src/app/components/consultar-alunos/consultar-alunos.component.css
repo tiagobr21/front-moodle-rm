@@ -2,7 +2,7 @@
     border-radius: 2.5px;
     margin: 50px 0 0 20px;
     width: 97%;
-    height:  100%;
+    height:  auto;
     padding: 100px;
     background-color: whitesmoke;
     border: 1px solid #ccc;
@@ -38,4 +38,23 @@
    margin: 18% 0 0 40%;
 }
 
+.mdl-img{
+   width: 10%;
+   position: relative;
+   top:0;
+   left: 30%;
+ }
 
+ .relationship{
+   width: 7%;
+   position: relative;
+   top:0;
+   left: 30%;
+ }
+ 
+ .rm-img{
+   width: 12%;
+   position: relative;
+   top:0;
+   left: 30%;
+ }

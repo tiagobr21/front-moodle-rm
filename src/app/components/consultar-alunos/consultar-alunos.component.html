@@ -1,12 +1,13 @@
 
-
+<img class="mdl-img" src="../../../assets/img/mdl.png">
+<img class="relationship" src="../../../assets/img/relationship.png">
+<img class="rm-img" src="../../../assets/img/rm.png">
 
 <mat-icon routerLink ='/alunos' class="backpage">keyboard_backspace</mat-icon>
 
 <div class="loading" *ngIf="!loading">  
     <h4 id="title-progress" class="fixed-top">Carregando Alunos</h4>
-    <mat-progress-bar class="progress" *ngIf="!loading" mode="buffer"></mat-progress-bar>
-
+    <mat-progress-bar class="progress" *ngIf="!loading" mode="indeterminate"></mat-progress-bar>
 </div> 
  
 <section *ngIf="loading"  class="dados">

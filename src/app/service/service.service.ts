@@ -9,8 +9,8 @@ import { catchError } from 'rxjs/operators';
 })
 export class ServiceService {
 
-  cadastrarAlunos = 'http://127.0.0.1:9000/cadastrar'; 
-  consultarAlunos = 'http://127.0.0.1:9000/consultar'; 
+  cadastrarAlunos = 'http://127.0.0.1:8000/cadastrar'; 
+  consultarAlunos = 'http://127.0.0.1:8000/consultar'; 
   deletarAlunos = 'http://127.0.0.1:9000/deletar'; 
   constructor(private _http: HttpClient) { }
 
@@ -35,14 +35,5 @@ export class ServiceService {
     }
 
 
-    excluirAlunos(data:any):Observable<any>{
-     console.log(data)
-      return this._http.post(`${this.deletarAlunos}`,data).pipe(
-        catchError((error, caught) => {
-         alert('O servidor não está respondendo no momento, por favor aguarde e atualize a página (F5) !');
-         return error
-        }))
-     
-      }
 
 }

@@ -9,10 +9,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { TestApiComponent } from './components/test-api/test-api.component';
 import { ConsultarAlunosComponent } from './components/consultar-alunos/consultar-alunos.component';
 import { AppMaterialModule } from './components/material/app-material.module';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
 import {MatIconModule} from '@angular/material/icon';
-import { DeletarComponent } from './components/deletar/deletar.component';
+
 
 
 
@@ -23,7 +22,7 @@ import { DeletarComponent } from './components/deletar/deletar.component';
     AppComponent,
     TestApiComponent,
     ConsultarAlunosComponent,
-    DeletarComponent,
+
 
     
   ],
@@ -33,7 +32,7 @@ import { DeletarComponent } from './components/deletar/deletar.component';
     HttpClientModule,
     AppRoutingModule,
     AppMaterialModule,
-    BrowserAnimationsModule,
+  
     MatDialogModule,
     MatIconModule,
 
