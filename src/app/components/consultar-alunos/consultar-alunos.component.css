@@ -58,3 +58,13 @@
    top:0;
    left: 30%;
  }
+
+ .delete{
+   float: right;
+   position: relative;
+   top: 15px;
+   right: 5px;
+   cursor: pointer;
+ }
+
+ 

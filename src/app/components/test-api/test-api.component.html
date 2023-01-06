@@ -15,7 +15,7 @@
 
     <div *ngIf="!loading && cadastrar">
     <h4 class="title-progress">Carregando Alunos</h4>
-    <mat-progress-bar class="progress" *ngIf="!loading && cadastrar" mode="indeterminate"></mat-progress-bar>
+         <mat-progress-bar class="progress" *ngIf="!loading && cadastrar" mode="indeterminate"></mat-progress-bar>
     </div>
     
     <div *ngIf="loading">
@@ -23,7 +23,14 @@
            Alunos Atualiazados com sucesso!
         </div>
     </div>
-
+    
+    <button id="showerrors" *ngIf="response != null" (click)="errors()" type="button" class="btn btn-primary">Exibir Logs <div class="count"><span>{{countresponse}}</span></div></button>
+    
+    <div *ngIf="showerrors" id="alerterrors" class="alert lert-primary" role="alert">
+        <div *ngFor="let error of response">
+            <p>{{error}}</p>
+        </div>
+    </div>
    
     
    

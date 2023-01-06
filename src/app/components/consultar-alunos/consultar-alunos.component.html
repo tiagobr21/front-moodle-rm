@@ -28,8 +28,11 @@
                 <td>{{dados.firstname}}</td>
                 <td>{{dados.lastname}}</td>
                 <td>{{dados.email}}</td>
+                <mat-icon (click)="deletarAluno(dados.id)" class="delete">delete</mat-icon>
             </tr>
-            </tbody>
+         
+            </tbody> 
+        
         </table>
     </div>
 </section>

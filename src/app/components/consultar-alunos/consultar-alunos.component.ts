@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ServiceService } from 'src/app/service/service.service';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
-
+import { ExcluirAlunoComponent } from '../msg/excluir-aluno/excluir-aluno.component';
 
 @Component({
   selector: 'app-consultar-alunos',
@@ -15,13 +15,14 @@ export class ConsultarAlunosComponent implements OnInit {
   loading:boolean = false;
   ids:any[] = [];
 
+
   constructor(private service: ServiceService,private dialog:MatDialog) { }
 
   ngOnInit(): void {
         this.service.consulAlunos().subscribe((res)=>{
           this.loading = true;
           this.alunos = res;
-          console.log(this.alunos);
+          
  
           for(let i=0;i< this.alunos.length;i++){
       
@@ -41,8 +42,25 @@ export class ConsultarAlunosComponent implements OnInit {
              
       
           }
+      });
 
-    })
+
+  }
+
+   deletarAluno(id:any){
+          
+     this.service.deletarAlunos(id).subscribe((res)=>{
+         
+       setTimeout(() => {
+        window.location.reload();
+      }, 1000);
+      
+      const dialogRef = this.dialog.open(ExcluirAlunoComponent,{
+        width:'500px',
+  
+      })
+    }) 
+     
   }
 
 }

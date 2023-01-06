@@ -2,7 +2,7 @@
     border-radius: 2.5px;
     margin: 40px 0 0 10%;
     width: 80%;
-    padding: 80px;
+    padding: 60px;
     background-color: whitesmoke;
     border: 2px solid #152359;
     border-radius: 20px;
@@ -46,7 +46,7 @@
  }
 
  #message-sucess{
-   margin: -10px 0 -10px 22%;
+   margin: -60px 0 -10px 22%;
    max-width: 60%;
    font-weight: bold;
  }
@@ -87,3 +87,34 @@
    max-width: 60%;
    font-weight: bold;
  }
+
+#showerrors{
+  position: relative;
+  top: 30px;
+  left: 42%;
+  font-weight: bold;
+}
+
+#alerterrors{
+  margin-top: 50px;
+  border-radius: 10px;
+  border: 1px solid #152359 ;
+}
+
+.count{
+  background-color: aliceblue;
+  width: 14px;
+  height: 14px;
+  font-size: 10px;
+  color: black;
+  border-radius: 20px;
+  float: right;
+  position: relative;
+  left: 5px;
+
+}
+
+#info{
+  font-weight: bold;
+
+}

@@ -1,0 +1,13 @@
+p{
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+}
+
+#close{
+    float: right;
+    position: relative;
+    top:-10px;
+    cursor: pointer;
+}
+

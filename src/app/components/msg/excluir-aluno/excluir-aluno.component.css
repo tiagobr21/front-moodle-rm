@@ -1,0 +1,10 @@
+p{
+    font-weight: bold;
+}
+
+#close{
+    float: right;
+    position: relative;
+    top:-10px;
+    cursor: pointer;
+}
