@@ -18,6 +18,7 @@ import { ErrorserviceComponent } from './components/errors/errorservice/errorser
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,6 +26,7 @@ import { ErrorserviceComponent } from './components/errors/errorservice/errorser
     ConsultarAlunosComponent,
     ExcluirAlunoComponent,
     ErrorserviceComponent,
+
   
   ],
 

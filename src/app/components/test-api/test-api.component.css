@@ -16,7 +16,7 @@
 
 #cadastrar{
    position: relative;
-   top: -10px;
+   top: -80px;
    left: 10%;
    padding: 5%;
    width: 20%;
@@ -27,7 +27,7 @@
  
 #consultar{
    position: relative;
-   top: -10px;
+   top: -80px;
    left: 20%;
    padding: 5%;
    width: 20%;
@@ -36,6 +36,16 @@
    cursor: pointer;
  }
 
+ #cadastrarcurso{
+  position: relative;
+  top: -50px;
+  left: 10%;
+  padding: 5%;
+  width: 20%;
+  height: 10%;
+  font-size: 100px;
+  cursor: pointer;
+}
  .title-progress{
     margin: -2% 0 0 38%;
  }
@@ -74,7 +84,7 @@
 
  .descrition1{
    position: relative;
-   top:-60px;
+   top:-130px;
    left: 28%;
    max-width: 28%;
    font-weight: bold;
@@ -82,20 +92,35 @@
 
  .descrition2{
    position: relative;
-   top:-97px;
+   top:-167px;
    left: 59%;
    max-width: 60%;
    font-weight: bold;
  }
 
-#showerrors{
+ .descrition3{
+  position: relative;
+  top: -90px;
+  left: 29%;
+  max-width: 60%;
+  font-weight: bold;
+}
+
+#showlogs{
   position: relative;
   top: 30px;
   left: 42%;
   font-weight: bold;
 }
 
-#alerterrors{
+#showlogs2{
+  position: relative;
+  top: 30px;
+  left: 42%;
+  font-weight: bold;
+}
+
+#alertlogs{
   margin-top: 50px;
   border-radius: 10px;
   border: 1px solid #152359 ;

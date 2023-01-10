@@ -11,13 +11,19 @@ import { ConsultarAlunosComponent } from '../consultar-alunos/consultar-alunos.c
 })
 export class TestApiComponent implements OnInit {
   
-  response:any;
-  responsend:any[]=[]
+  responsealunos:any;
+  responsecursos:any;
   loading:boolean = false;
+  loading2:boolean = false;
   cadastrar:boolean = false;
+  cadastrar2:boolean = false;
   stop:boolean = false;
-  showerrors:boolean = false;
+  showelogs:boolean = false;
+  showelogs2:boolean = false;
   countresponse:any
+  countresponse2:any
+
+
 
   constructor(private service: ServiceService,private dialog:MatDialog) { }
 
@@ -29,19 +35,30 @@ export class TestApiComponent implements OnInit {
     this.cadastrar = true;
     this.service.listarAlunos().subscribe((res)=>{
         this.loading= true;
-        this.response = res;
-        console.log(this.response);
-        this.response = this.response.logs;
-        this.countresponse = this.response.length/2; 
-
-     
-    
-    })
+        this.responsealunos = res;
+        console.log(this.responsealunos);
+        this.responsealunos = this.responsealunos.logs;
+        this.countresponse = this.responsealunos.length/2; 
+    });
   }
 
+  cadastrarCurso(){
+    this.cadastrar2 = true;
+    this.service.criarCursos().subscribe((res)=>{
+    this.loading2= true;
+    this.responsecursos = res;
+    this.countresponse2 = this.responsecursos.length
+    console.log(this.responsecursos);
 
-  errors(){
-    this.showerrors = !this.showerrors;
+   });
+  }
+
+  logs(){
+    this.showelogs = !this.showelogs;
+  }
+
+  logs2(){
+    this.showelogs2 = !this.showelogs2;
   }
 
 

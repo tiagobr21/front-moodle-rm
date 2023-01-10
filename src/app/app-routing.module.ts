@@ -6,8 +6,7 @@ import { ConsultarAlunosComponent } from './components/consultar-alunos/consulta
 
 
 const routes: Routes = [
-  {path:'',component:AppComponent},
-  {path:'alunos',component:TestApiComponent},
+  {path:'',component:TestApiComponent},
   {path:'alunos/consultar-aluno',component:ConsultarAlunosComponent}
 
 ];
