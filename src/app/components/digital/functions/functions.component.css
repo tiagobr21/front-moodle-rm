@@ -1,0 +1,168 @@
+.dados{
+  border-radius: 2.5px;
+  margin: 40px 0 0 10%;
+  width: 80%;
+  padding: 30px;
+  background-color: whitesmoke;
+  border: 2px solid #152359;
+  border-radius: 20px;
+}
+
+.backpagehome{
+  position: relative;
+  top: -10px;
+  cursor: pointer;
+}
+
+.flex{
+ display: flex;
+ position: relative;
+ left: 15%;
+}
+
+#cadastrar{
+ position: relative;
+ top: -80px;
+ left: -5%;
+ padding: 5%;
+ width: 20%;
+ height: 10%;
+ font-size: 100px;
+ cursor: pointer;
+}
+
+
+.descrition1{
+position: relative;
+top:-130px;
+left: 13%;
+max-width: 28%;
+font-weight: bold;
+}
+
+
+#consultar{
+ position: relative;
+ top: -80px;
+ left: -4%;
+ padding: 5%;
+ width: 20%;
+ height: 10%;
+ font-size: 110px;
+ cursor: pointer;
+}
+
+.descrition2{
+position: relative;
+top:-167px;
+left: 35%;
+max-width: 60%;
+font-weight: bold;
+}
+
+
+#cadastrarcurso{
+position: relative;
+top: -77px;
+left: -3%;
+padding: 5%;
+width: 20%;
+height: 10%;
+font-size: 100px;
+cursor: pointer;
+}
+
+.descrition3{
+position: relative;
+top: 120px;
+left: 56%;
+max-width: 60%;
+font-weight: bold;
+}
+
+.title{
+position: relative;
+top: -40px;
+left: 44%;
+max-width: 42%;
+font-size: 27px;
+font-family: 'Courier New', Courier, monospace;
+font-weight: bold;
+color: #343434;
+}
+
+.title-progress{
+  margin: -2% 0 0 38%;
+}
+
+.progress{
+  margin: 20px 0 0 38%;
+  max-width: 22%;
+}
+
+#message-sucess{
+ margin: -130px 0 -10px 22%;
+ max-width: 60%;
+ font-weight: bold;
+}
+
+.mdl-img{
+ width: 10%;
+ position: relative;
+ top:0;
+ left: 36%;
+}
+
+.relationship{
+ width: 7%;
+ position: relative;
+ top:0;
+ left: 36%;
+}
+
+.rm-img{
+ width: 12%;
+ position: relative;
+ top:0;
+ left: 36%;
+}
+
+
+#showlogs{
+position: relative;
+top: 20px;
+left: 42%;
+font-weight: bold;
+}
+
+#showlogs2{
+position: relative;
+top: 20px;
+left: 42%;
+font-weight: bold;
+}
+
+#alertlogs{
+margin-top: 50px;
+border-radius: 10px;
+border: 1px solid #152359 ;
+}
+
+.count{
+background-color: aliceblue;
+width: 14px;
+height: 14px;
+font-size: 10px;
+color: black;
+border-radius: 20px;
+float: right;
+position: relative;
+left: 5px;
+
+}
+
+#info{
+font-weight: bold;
+
+}
+

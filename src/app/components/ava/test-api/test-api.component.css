@@ -2,7 +2,7 @@
     border-radius: 2.5px;
     margin: 40px 0 0 10%;
     width: 80%;
-    padding: 60px;
+    padding: 30px;
     background-color: whitesmoke;
     border: 2px solid #152359;
     border-radius: 20px;
@@ -14,27 +14,83 @@
    left: 15%;
 }
 
+.backpagehome{
+  position: relative;
+  top: -10px;
+  cursor: pointer;
+}
+
+
 #cadastrar{
    position: relative;
-   top: -10px;
-   left: 10%;
+   top: -80px;
+   left: -5%;
    padding: 5%;
    width: 20%;
    height: 10%;
    font-size: 100px;
    cursor: pointer;
 }
+
+
+.descrition1{
+  position: relative;
+  top:-130px;
+  left: 13%;
+  max-width: 28%;
+  font-weight: bold;
+}
+
  
 #consultar{
    position: relative;
-   top: -10px;
-   left: 20%;
+   top: -80px;
+   left: -4%;
    padding: 5%;
    width: 20%;
    height: 10%;
    font-size: 110px;
    cursor: pointer;
  }
+
+ .descrition2{
+  position: relative;
+  top:-167px;
+  left: 35%;
+  max-width: 60%;
+  font-weight: bold;
+}
+
+
+ #cadastrarcurso{
+  position: relative;
+  top: -77px;
+  left: -3%;
+  padding: 5%;
+  width: 20%;
+  height: 10%;
+  font-size: 100px;
+  cursor: pointer;
+}
+
+.descrition3{
+  position: relative;
+  top: 127px;
+  left: 56%;
+  max-width: 60%;
+  font-weight: bold;
+}
+
+.title{
+  position: relative;
+  top: -50px;
+  left: 44%;
+  max-width: 42%;
+  font-size: 27px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  color: #343434;
+}
 
  .title-progress{
     margin: -2% 0 0 38%;
@@ -46,7 +102,7 @@
  }
 
  #message-sucess{
-   margin: -60px 0 -10px 22%;
+   margin: -130px 0 -10px 22%;
    max-width: 60%;
    font-weight: bold;
  }
@@ -72,30 +128,22 @@
    left: 36%;
  }
 
- .descrition1{
-   position: relative;
-   top:-60px;
-   left: 28%;
-   max-width: 28%;
-   font-weight: bold;
- }
 
- .descrition2{
-   position: relative;
-   top:-97px;
-   left: 59%;
-   max-width: 60%;
-   font-weight: bold;
- }
-
-#showerrors{
+ #showlogs{
   position: relative;
-  top: 30px;
+  top: 20px;
   left: 42%;
   font-weight: bold;
-}
+  }
+  
+  #showlogs2{
+  position: relative;
+  top: 20px;
+  left: 42%;
+  font-weight: bold;
+  }
 
-#alerterrors{
+#alertlogs{
   margin-top: 50px;
   border-radius: 10px;
   border: 1px solid #152359 ;
@@ -118,3 +166,4 @@
   font-weight: bold;
 
 }
+

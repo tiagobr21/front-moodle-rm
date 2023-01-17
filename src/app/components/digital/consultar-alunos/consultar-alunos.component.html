@@ -3,7 +3,7 @@
 <img class="relationship" src="../../../assets/img/relationship.png">
 <img class="rm-img" src="../../../assets/img/rm.png">
 
-<mat-icon routerLink ='/alunos' class="backpage">keyboard_backspace</mat-icon>
+<mat-icon routerLink ='/digital' class="backpage">keyboard_backspace</mat-icon>
 
 <div class="loading" *ngIf="!loading">  
     <h4 id="title-progress" class="fixed-top">Carregando Alunos</h4>
@@ -28,7 +28,7 @@
                 <td>{{dados.firstname}}</td>
                 <td>{{dados.lastname}}</td>
                 <td>{{dados.email}}</td>
-                <mat-icon (click)="deletarAluno(dados.id)" class="delete">delete</mat-icon>
+                <!-- <mat-icon (click)="deletarAluno(dados.id)" class="delete">delete</mat-icon> -->
             </tr>
          
             </tbody> 

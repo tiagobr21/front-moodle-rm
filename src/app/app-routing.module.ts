@@ -1,14 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { TestApiComponent } from './components/test-api/test-api.component';
-import { AppComponent } from './app.component';
-import { ConsultarAlunosComponent } from './components/consultar-alunos/consultar-alunos.component';
-
+import { TestApiComponent } from './components/ava/test-api/test-api.component';
+import { ConsultarAlunosComponent } from './components/ava/test-api/consultar-alunos/consultar-alunos.component';
+import { HomeComponent } from './components/home/home.component';
+import { FunctionsComponent } from './components/digital/functions/functions.component';
 
 const routes: Routes = [
-  {path:'',component:AppComponent},
-  {path:'alunos',component:TestApiComponent},
-  {path:'alunos/consultar-aluno',component:ConsultarAlunosComponent}
+  {path:'',redirectTo:'home',pathMatch:'full'},
+  {path:'home',component:HomeComponent},
+  {path:'ava',component:TestApiComponent},
+  {path:'digital',component:FunctionsComponent},
+  {path:'ava/consultar-aluno',component:ConsultarAlunosComponent},
+  {path:'digital/consultar-aluno',component:ConsultarAlunosComponent}
 
 ];
 

@@ -13,6 +13,7 @@ export class ServiceService {
   urlcCadastrarAlunos = 'http://localhost:4200/api/cadastrar'; 
   urlConsultarAlunos = 'http://localhost:4200/api/consultar'; 
   urlDeletarAlunos = 'http://localhost:4200/api/excluir'; 
+  urlCriarCursos = 'http://localhost:4200/api/criarcurso';
 
   constructor(private _http: HttpClient,private dialog:MatDialog) { }
 
@@ -40,6 +41,17 @@ export class ServiceService {
       let ids = id;
       console.log(ids);
       return this._http.get(`${this.urlDeletarAlunos}/${ids}`);
+    }
+
+    criarCursos():Observable<any>{
+      return this._http.get(`${this.urlCriarCursos}`).pipe(
+        catchError((error, caught) => {
+         const dialogConfig = this.dialog.open(ErrorserviceComponent,{
+            width:'550px',
+            height:'15%'
+         })
+         return error
+        }))
     }
 
 }
