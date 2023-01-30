@@ -92,7 +92,7 @@ color: #343434;
 }
 
 .title-progress{
-  margin: -2% 0 0 38%;
+  margin: -6% 0 0 38%;
 }
 
 .progress{
@@ -150,8 +150,8 @@ border: 1px solid #152359 ;
 
 .count{
 background-color: aliceblue;
-width: 14px;
-height: 14px;
+width: 20px;
+height: 18px;
 font-size: 10px;
 color: black;
 border-radius: 20px;

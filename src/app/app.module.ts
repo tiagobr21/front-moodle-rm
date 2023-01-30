@@ -15,6 +15,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ErrorserviceComponent } from './components/errors/errorservice/errorservice.component';
 import { HomeComponent } from './components/home/home.component';
 import { FunctionsComponent } from './components/digital/functions/functions.component';
+import { ConsultarAlunoDigitalComponent } from './components/digital/consultar-aluno-digital/consultar-aluno-digital.component';
 
 
 
@@ -30,6 +31,7 @@ import { FunctionsComponent } from './components/digital/functions/functions.com
     ErrorserviceComponent,
     HomeComponent,
     FunctionsComponent,
+    ConsultarAlunoDigitalComponent,
 
   
   ],

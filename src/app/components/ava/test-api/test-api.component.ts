@@ -47,7 +47,7 @@ export class TestApiComponent implements OnInit {
     this.service.criarCursos().subscribe((res)=>{
     this.loading2= true;
     this.responsecursos = res;
-    this.countresponse2 = this.responsecursos.length
+    this.countresponse2 = this.responsecursos.length/2
     console.log(this.responsecursos);
 
    });

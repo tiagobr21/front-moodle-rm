@@ -48,9 +48,8 @@ export class FunctionsComponent implements OnInit {
     this.service.criarCursos().subscribe((res)=>{
     this.loading2= true;
     this.responsecursos = res;
-    this.countresponse2 = this.responsecursos.length
-    console.log(this.responsecursos);
-
+    this.countresponse2 = this.responsecursos.length/2;
+  
    });
   }
 

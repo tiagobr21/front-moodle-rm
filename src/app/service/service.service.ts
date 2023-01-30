@@ -10,14 +10,15 @@ import { MatDialog,MatDialogConfig } from '@angular/material/dialog';
 })
 export class ServiceService {
 
-  urlcCadastrarAlunos = 'http://localhost:4200/api/cadastrar'; 
-  urlConsultarAlunos = 'http://localhost:4200/api/consultar'; 
+  urlcCadastrarAlunos = 'http://localhost:4200/api/criaralunos'; 
+  urlConsultarAlunos = 'http://localhost:4200/api/consultaralunos'; 
   urlDeletarAlunos = 'http://localhost:4200/api/excluir'; 
   urlCriarCursos = 'http://localhost:4200/api/criarcurso';
 
   constructor(private _http: HttpClient,private dialog:MatDialog) { }
 
- 
+  
+
    listarAlunos():Observable<any>{
     return this._http.get(`${this.urlcCadastrarAlunos}`).pipe(
       catchError((error, caught) => {
